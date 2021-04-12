@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.maqollar.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.example.maqollar.ui.gallery.FavoriteFragment"
+        android:label="@string/menu_favorite"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.maqollar.ui.slideshow.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/maqolFragment"
+        android:name="com.example.maqollar.ui.home.MaqolFragment"
+        android:label="fragment_maqol"
+        tools:layout="@layout/fragment_maqol" />
+
+    <fragment
+        android:id="@+id/ruknFragment"
+        android:name="com.example.maqollar.ui.home.RuknFragment"
+        android:label="fragment_rukn"
+        tools:layout="@layout/fragment_rukn" />
+    <fragment
+        android:id="@+id/ruknItemsFragment"
+        android:name="com.example.maqollar.ui.home.RuknItemsFragment"
+        android:label="fragment_rukn_items"
+        tools:layout="@layout/fragment_rukn_items" />
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="com.example.maqollar.DownloadFragment"
+        android:label="fragment_download"
+        tools:layout="@layout/fragment_download" />
+
+</navigation>
